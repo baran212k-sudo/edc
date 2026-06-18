@@ -440,6 +440,7 @@ footer {
         flex-direction: column;
         padding: 1rem;
         gap: 1.5rem;
+        position: relative !important;
     }
 
     .nav-links {
