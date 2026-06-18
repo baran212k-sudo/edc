@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Originals | Masterclass</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="locked">
+
+    <nav>
+        <a href="index.html" class="logo">The Originals</a>
+        <div class="nav-links">
+            <a href="index.html#courses">Back</a>
+            <a href="#" class="btn btn-outline" id="nav-login-btn" style="margin-left: 2rem;">Log In</a>
+        </div>
+    </nav>
+
+    <!-- Login Prompt Overlay -->
+    <div class="login-overlay-prompt">
+        <h2 style="margin-bottom: 1rem; font-weight: 300;">MEMBERS ONLY</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">You must be authenticated to view this advanced training material.</p>
+        <button class="btn btn-primary" onclick="document.getElementById('login-modal').classList.add('active')">Log In to Unlock</button>
+    </div>
+
+    <main class="container animate-fade-in protected-content">
+        <header class="article-header">
+            <div style="color: var(--accent-secondary); font-weight: 600; margin-bottom: 1rem; letter-spacing: 2px;">ADVANCED MASTERCLASS</div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -1px;">Institutional Architecture</h1>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.1rem; font-weight: 300;">
+                A comprehensive guide to ICT Manipulations, SMT Divergence, Rejection Blocks, and the MSNR Storyline. Learn to trade alongside the algorithmic footprint of Smart Money.
+            </p>
+        </header>
+
+        <article class="article-content glass" style="padding: 4rem; margin-bottom: 4rem;">
+            
+            <p>Retail trading concepts keep you trapped in a cycle of stop-hunts. To break free, you must understand the true mechanics of market delivery. This masterclass combines the precision of <strong>Malaysian SNR (MSNR)</strong> with the institutional logic of <strong>ICT (Inner Circle Trader) Concepts</strong>.</p>
+
+            <h2>1. ICT Manipulations & Liquidity Sweeps</h2>
+            <p>The market is engineered to seek liquidity. Before any major move, "Smart Money" must accumulate positions. They do this by triggering the stop-losses of retail traders.</p>
+            <ul>
+                <li><strong>The Stop Hunt (Judas Swing):</strong> A sudden, aggressive move above an old high or below an old low. Its sole purpose is to trap breakout traders and hit stop losses.</li>
+                <li><strong>Inducement:</strong> Creating obvious (but weak) support/resistance levels to encourage retail traders to enter early, only to sweep them later.</li>
+            </ul>
+            <p><em>Rule of thumb:</em> If the market hasn't swept liquidity yet, YOU are the liquidity. Always wait for the manipulation phase to complete before entering.</p>
+
+            <h2>2. SMT Divergence (Smart Money Technique)</h2>
+            <p>How do we know if a breakout is real or just an ICT Manipulation? We use <strong>SMT Divergence</strong>. This concept compares two highly correlated assets (e.g., EURUSD and GBPUSD, or Nasdaq and S&P500).</p>
+            
+            <img src="assets/smt-chart.png" alt="SMT Divergence Chart" class="course-image">
+
+            <h3>How to Read SMT:</h3>
+            <p>In a normal market, if EURUSD makes a Higher High, GBPUSD should also make a Higher High. SMT occurs when this symmetry breaks.</p>
+            <ul>
+                <li><strong>Bearish SMT:</strong> EURUSD makes a Higher High, but GBPUSD fails to make a Higher High (it makes a Lower High). This discrepancy indicates institutional selling (distribution) is happening under the surface. The breakout is a trap.</li>
+                <li><strong>Bullish SMT:</strong> Asset A makes a Lower Low, but Asset B makes a Higher Low. This is accumulation. Smart money is buying.</li>
+            </ul>
+
+            <h2>3. The Rejection Block</h2>
+            <p>Once we identify manipulation via SMT, we look for the entry trigger: The <strong>Rejection Block</strong>.</p>
+            
+            <img src="assets/rejection-chart.png" alt="ICT Rejection Block" class="course-image">
+
+            <p>A Rejection Block is formed when a candle sweeps a major liquidity pool and is immediately rejected, leaving behind a <strong>very long wick</strong>. Unlike traditional Order Blocks that focus on the candle body, the Rejection Block focuses entirely on the wick itself.</p>
+            <ul>
+                <li><strong>Identification:</strong> A long wick that pierced through an old high/low and closed back inside the range.</li>
+                <li><strong>Execution:</strong> When price retraces back into the area of that long wick, it offers a highly precise, low-risk entry for a reversal. The algorithm is mitigating the positions it used to manipulate the market.</li>
+            </ul>
+
+            <div class="pro-tip">
+                <strong>💡 The Ultimate Setup (Combining the Concepts)</strong><br>
+                1. Identify an MSNR "Fresh Zone" on the Daily timeframe.<br>
+                2. Wait for price to reach the zone and sweep an old high/low (Manipulation).<br>
+                3. Check correlated assets for SMT Divergence to confirm the sweep is a trap.<br>
+                4. Look for a Rejection Block (long wick) on the 15m/1H chart.<br>
+                5. Enter on the retest of the Rejection Block targeting the next internal liquidity pool.
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <p style="margin-bottom: 2rem; color: var(--text-muted);">Ready to apply these concepts live with the team?</p>
+                <a href="https://t.me/+CMxewfsG-AU3Nzlk" target="_blank" class="btn btn-primary" style="padding: 1rem 3rem;">Join The Originals Telegram</a>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Originals. All rights reserved. For educational purposes only.</p>
+    </footer>
+
+    <!-- Login Modal (Same as index) -->
+    <div id="login-modal">
+        <div class="login-box">
+            <h2>MEMBER LOGIN</h2>
+            <div class="error-msg" id="login-error">Invalid credentials. Try again.</div>
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email-input" placeholder="trader@theoriginals.com">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password-input" placeholder="••••••••">
+            </div>
+            <button class="btn btn-primary" id="submit-login" style="width: 100%; margin-top: 1rem;">Authenticate</button>
+            <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.8rem;">Don't have an account? <br>Join the Telegram group to get access.</p>
+            <button id="close-modal" style="background: none; border: none; color: white; margin-top: 1.5rem; cursor: pointer; text-decoration: underline;">Close</button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
