@@ -27,6 +27,7 @@ body {
         radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.03), transparent 25%),
         radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.03), transparent 25%);
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /* Glassmorphism utility */
@@ -420,4 +421,77 @@ footer {
     margin-top: 6rem;
     font-size: 0.9rem;
     letter-spacing: 1px;
+}
+
+/* =========================================
+   MOBİL UYUM (RESPONSIVE)
+   ========================================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin-left: 0 !important;
+    }
+
+    /* Fix the narrow content issue */
+    .article-content.glass {
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .glass[style*="padding: 5rem 2rem;"] {
+        padding: 2rem 1rem !important;
+    }
+
+    .article-header h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .article-content p {
+        font-size: 1rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .pro-tip {
+        padding: 1rem;
+    }
+
+    .login-overlay-prompt {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
 }
