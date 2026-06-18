@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurumsal ICT & SMT | The Originals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="locked">
+
+    <nav>
+        <a href="index.html" class="logo">The Originals</a>
+        <div class="nav-links">
+            <a href="index.html#courses">Geri Dön</a>
+            <a href="#" class="btn btn-outline" id="nav-login-btn" style="margin-left: 2rem;">Giriş Yap</a>
+        </div>
+    </nav>
+
+    <!-- Login Prompt Overlay -->
+    <div class="login-overlay-prompt">
+        <h2 style="margin-bottom: 1rem; font-weight: 300;">SADECE ÜYELER</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Bu ileri düzey ICT materyalini görüntülemek için giriş yapmalısınız.</p>
+        <button class="btn btn-primary" onclick="document.getElementById('login-modal').classList.add('active')">Kilidi Açmak İçin Giriş Yap</button>
+    </div>
+
+    <main class="container animate-fade-in protected-content">
+        <header class="article-header">
+            <div style="color: var(--accent-secondary); font-weight: 600; margin-bottom: 1rem; letter-spacing: 2px;">MODÜL 2</div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -1px;">ICT, SMT ve Pazar Manipülasyonları</h1>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.1rem; font-weight: 300;">
+                Büyük fonların ve bankaların likiditeyi nasıl avladığını (Stop Hunt), SMT Uyumsuzluğu ile tuzakların nasıl tespit edileceğini ve Rejection Block'lardan nasıl milimetrik giriş yapılacağını öğrenin.
+            </p>
+        </header>
+
+        <article class="article-content glass" style="padding: 4rem; margin-bottom: 4rem;">
+            
+            <p>Modül 1'de MSNR ile taze bölgeleri (Fresh Zones) ve yönü (Storyline) bulduk. Ancak fiyat o bölgeye geldiğinde <strong>"Kurumsal Akıllı Para" (Smart Money)</strong> hemen işlemi başlatmaz. Önce "Likiditeyi (Liquidity)" yani stop patlatmayı arar. İşte ICT (Inner Circle Trader) konseptleri burada devreye girer.</p>
+
+            <h2>1. Likidite Avı ve Judas Swing (Sahte Hareket)</h2>
+            <p>Piyasayı hareket ettiren şey sizin "destek" sandığınız çizgiler değil, o çizgilerin altındaki <strong>Zarar Kes (Stop-Loss)</strong> emirleridir. Akıllı para devasa bir alım yapmak istiyorsa, piyasada onlara satacak birileri olmalıdır. Bunu sağlamak için fiyatı suni olarak aşağı itip bireysel traderların stoplarını patlatırlar (Stop Hunt).</p>
+            <ul>
+                <li><strong>Buy Side Liquidity (BSL):</strong> Eski bir tepenin üzerindeki alım stoplarıdır. Fiyat burayı bilerek geçip "Yükseliş koptu!" hissi verir, herkes alıma girerken Akıllı Para satar.</li>
+                <li><strong>Sell Side Liquidity (SSL):</strong> Eski bir dibin altındaki satış stoplarıdır. Fiyat burayı deler, herkes "Düşüş başladı!" diye satarken, Akıllı Para bu satıcıların mallarını ucuzdan toplar.</li>
+                <li><strong>Judas Swing:</strong> Londra veya New York açılışında, asıl yönün tam tersine yapılan sahte ve hızlı manipülasyon hareketidir. Amacı erken girenleri oyundan atmaktır.</li>
+            </ul>
+
+            <h2>2. Manipülasyonu Tespit Etmek: SMT Uyumsuzluğu (Divergence)</h2>
+            <p>Peki bir tepenin kırılması gerçek bir kırılım mı (Breakout) yoksa likidite avı (Stop Hunt) mı? Bunu <strong>SMT Divergence</strong> ile kesinleştiririz.</p>
+            
+            <img src="assets/smt-chart.png" alt="SMT Uyumsuzluk Grafiği" class="course-image">
+
+            <p>SMT, yüksek korelasyonlu iki varlığı karşılaştırma sanatıdır. Örneğin; EUR/USD ve GBP/USD, veya NQ (Nasdaq) ve ES (S&P 500) birlikte hareket etmelidir.</p>
+            <ul>
+                <li>Eğer EUR/USD yeni bir tepe yapıp eski tepeyi kırıyorsa (BSL alıyorsa), GBP/USD'nin de yeni bir tepe yapması gerekir.</li>
+                <li><strong>Düşüş (Bearish) SMT:</strong> Eğer EUR/USD yeni bir yüksek tepe (Higher High) yaparken, GBP/USD eski tepesini kıramayıp "Daha düşük tepe" (Lower High) yapıyorsa burada UYUMSUZLUK vardır. Bu bize EUR/USD'nin yaptığı yeni tepenin bir "Sahte Kırılım (Judas Swing)" olduğunu ve kurumsalların el altından satışa geçtiğini bağırarak söyler.</li>
+                <li>Bu SMT onayını gördüğümüz anda, o tepe kırılımından <strong>asla alım yapılmaz</strong>, Aksine satış (Short) fırsatı aranır!</li>
+            </ul>
+
+            <h2>3. Keskin Nişancı Girişi: Rejection Block (Ret Bloğu)</h2>
+            <p>MSNR ile yönü bulduk. SMT ile sahte hareketi (Stop Hunt) teyit ettik. Peki işleme tam olarak nereden gireceğiz? Cevap: <strong>Rejection Block</strong>.</p>
+            
+            <img src="assets/rejection-chart.png" alt="ICT Rejection Block Grafiği" class="course-image">
+
+            <p>Rejection Block, likiditenin alındığı o sahte hareketin ardında bıraktığı <strong>çok uzun bir fitildir (Wick)</strong>. ICT konseptlerinde asıl hacim ve kurumsal ayak izi gövdelerde değil, o uzun fitillerin içindedir.</p>
+            
+            <h3>Nasıl Kullanılır?</h3>
+            <ol style="padding-left: 1.5rem; color: #d4d4d8; margin-bottom: 2rem;">
+                <li style="margin-bottom: 0.5rem;">Fiyat eski bir tepeyi delip SMT oluşturduğunda, o mumun kapanışını bekleyin.</li>
+                <li style="margin-bottom: 0.5rem;">Eğer mum, deldiği o tepenin altında kapanırsa, geriye çok uzun bir fitil bırakmış olacaktır.</li>
+                <li style="margin-bottom: 0.5rem;">Bu uzun fitilin tepe noktasından (High) mumun gövdesine kadar olan alanı bir kutu içine alın. Bu sizin "Rejection Block" alanınızdır.</li>
+                <li style="margin-bottom: 0.5rem;">Fiyat o fitilin yarısına (Fair Value / %50 seviyesi) geri döndüğünde, bu en düşük riskli ve en yüksek potansiyelli işlem girişidir.</li>
+            </ol>
+
+            <div class="pro-tip">
+                <strong>💡 Kombinasyon Formülü (The Originals Setup)</strong><br>
+                Zaman: New York Açılışı (Killzone)<br>
+                1. Fiyat MSNR Taze (Fresh) A Bölgesine gelir.<br>
+                2. Fiyat önceki günün tepesini hızlıca kırar (Judas Swing/BSL alınır).<br>
+                3. Korele pariteye (Örn: NQ vs ES) bakılır, diğeri tepeyi kıramamıştır (SMT Divergence).<br>
+                4. Kırılım yapan mum aşağıda kapanıp devasa bir fitil (Rejection Block) bırakır.<br>
+                5. Fiyat tekrar o fitilin içine yükseldiğinde SHORT (Satış) işlemine girilir. Stop loss fitilin hemen üstüdür.
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <p style="margin-bottom: 2rem; color: var(--text-muted);">Sistemi kurduk. Peki ya psikolojimiz? Kaybettiğimizde veya fırsat kaçtığında ne yapacağız?</p>
+                <a href="psychology.html" class="btn btn-outline" style="padding: 1rem 3rem;">Modül 3: Psikoloji & Risk'e Geç</a>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Originals. Tüm hakları saklıdır. Sadece eğitim amaçlıdır.</p>
+    </footer>
+
+    <!-- Login Modal (Same as index) -->
+    <div id="login-modal">
+        <div class="login-box">
+            <h2>ÜYE GİRİŞİ</h2>
+            <div class="error-msg" id="login-error">Geçersiz bilgiler. Lütfen tekrar deneyin.</div>
+            <div class="input-group">
+                <label>E-posta Adresi</label>
+                <input type="email" id="email-input" placeholder="trader@theoriginals.com">
+            </div>
+            <div class="input-group">
+                <label>Şifre</label>
+                <input type="password" id="password-input" placeholder="••••••••">
+            </div>
+            <button class="btn btn-primary" id="submit-login" style="width: 100%; margin-top: 1rem;">Giriş Yap</button>
+            <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.8rem;">Hesabınız yok mu? <br>Erişim sağlamak için Telegram grubuna katılın.</p>
+            <button id="close-modal" style="background: none; border: none; color: white; margin-top: 1.5rem; cursor: pointer; text-decoration: underline;">Kapat</button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
