@@ -26,65 +26,72 @@
 
     <main class="container animate-fade-in protected-content">
         <header class="article-header">
-            <div style="color: var(--accent-secondary); font-weight: 600; margin-bottom: 1rem; letter-spacing: 2px;">MODÜL 2</div>
+            <div style="color: var(--accent-secondary); font-weight: 600; margin-bottom: 1rem; letter-spacing: 2px;">MODÜL 2: KAPSAMLI REHBER</div>
             <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -1px;">ICT, SMT ve Pazar Manipülasyonları</h1>
             <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.1rem; font-weight: 300;">
-                Büyük fonların ve bankaların likiditeyi nasıl avladığını (Stop Hunt), SMT Uyumsuzluğu ile tuzakların nasıl tespit edileceğini ve Rejection Block'lardan nasıl milimetrik giriş yapılacağını öğrenin.
+                Modül 1'de yönü bulduk. Şimdi işleme girmeden önce akıllı paranın bırakacağı tuzakları ve "Ayak İzlerini" nasıl takip edeceğimizi öğreniyoruz. Stop Hunt (Likidite Avı), SMT Divergence ve Rejection Block fitilleri ile milimetrik işlemler.
             </p>
         </header>
 
         <article class="article-content glass" style="padding: 4rem; margin-bottom: 4rem;">
             
-            <p>Modül 1'de MSNR ile taze bölgeleri (Fresh Zones) ve yönü (Storyline) bulduk. Ancak fiyat o bölgeye geldiğinde <strong>"Kurumsal Akıllı Para" (Smart Money)</strong> hemen işlemi başlatmaz. Önce "Likiditeyi (Liquidity)" yani stop patlatmayı arar. İşte ICT (Inner Circle Trader) konseptleri burada devreye girer.</p>
+            <p>Eğer piyasanın arz ve taleple hareket ettiğini düşünüyorsanız yanılıyorsunuz. Piyasayı hareket ettiren tek şey <strong>LİKİDİTE'dir</strong>. Likidite, kelime anlamı olarak "Nakit" demektir. Borsada nakit, bireysel trader'ların koyduğu Zarar-Kes (Stop-Loss) emirleridir. Piyasa yapıcı (Market Maker) sizin stoplarınızı patlatmadan piyasayı asla gerçek yönüne götürmez.</p>
 
-            <h2>1. Likidite Avı ve Judas Swing (Sahte Hareket)</h2>
-            <p>Piyasayı hareket ettiren şey sizin "destek" sandığınız çizgiler değil, o çizgilerin altındaki <strong>Zarar Kes (Stop-Loss)</strong> emirleridir. Akıllı para devasa bir alım yapmak istiyorsa, piyasada onlara satacak birileri olmalıdır. Bunu sağlamak için fiyatı suni olarak aşağı itip bireysel traderların stoplarını patlatırlar (Stop Hunt).</p>
+            <h2 style="margin-top: 3rem;">Bölüm 1: Likidite Avı (Stop Hunts) ve Teşvik</h2>
+            <p>Akıllı Para'nın (Smart Money) devasa pozisyonlar açmak için karşı tarafta emir bekleyen kurbanlara ihtiyacı vardır. Eğer 1 Milyar dolarlık alış yapacaklarsa, piyasada onlara satacak birileri olmalıdır. Bunu sağlamak için fiyatı suni olarak aşağı itip destekleri kırarlar.</p>
+
+            <h3>1.1 - Buy Side Liquidity (BSL) ve Sell Side Liquidity (SSL)</h3>
             <ul>
-                <li><strong>Buy Side Liquidity (BSL):</strong> Eski bir tepenin üzerindeki alım stoplarıdır. Fiyat burayı bilerek geçip "Yükseliş koptu!" hissi verir, herkes alıma girerken Akıllı Para satar.</li>
-                <li><strong>Sell Side Liquidity (SSL):</strong> Eski bir dibin altındaki satış stoplarıdır. Fiyat burayı deler, herkes "Düşüş başladı!" diye satarken, Akıllı Para bu satıcıların mallarını ucuzdan toplar.</li>
-                <li><strong>Judas Swing:</strong> Londra veya New York açılışında, asıl yönün tam tersine yapılan sahte ve hızlı manipülasyon hareketidir. Amacı erken girenleri oyundan atmaktır.</li>
+                <li><strong>BSL (Alım Tarafı Likiditesi):</strong> Eski bir tepe noktasının üzeridir. Klasik traderlar buraya "Direnç kırılırsa alıma geçerim (Buy Stop)" emirleri veya "Kısa işlemim (Short) patlarsa zarar keserim (Buy to Cover)" emirleri koyarlar. Fiyat burayı deldiğinde devasa bir alım likiditesi oluşur. Akıllı para bu likiditeyi kullanarak kendi "Satış" işlemlerini kilitler.</li>
+                <li><strong>SSL (Satış Tarafı Likiditesi):</strong> Eski bir dip noktasının altıdır. Destek kırıldı sanıp satmaya başlayanların emirleriyle doludur. Akıllı para bu satışları "Ucuzdan Alım" (Accumulation) yapmak için kullanır.</li>
             </ul>
 
-            <h2>2. Manipülasyonu Tespit Etmek: SMT Uyumsuzluğu (Divergence)</h2>
-            <p>Peki bir tepenin kırılması gerçek bir kırılım mı (Breakout) yoksa likidite avı (Stop Hunt) mı? Bunu <strong>SMT Divergence</strong> ile kesinleştiririz.</p>
-            
+            <h3>1.2 - Judas Swing (Yahuda'nın Öpücüğü)</h3>
+            <p>Özellikle Londra veya New York borsası açılışında (Killzone) gerçekleşir. Fiyat açılışla birlikte aniden asıl gideceği yönün TAM TERSİNE ok gibi fırlar. Amacı Asya seansında biriken likiditeyi süpürmek (Sweep) ve erken girenleri masadan atmaktır. Bu sahte harekete "Judas Swing" denir. Sizin ilk işleminiz her zaman bu Judas hareketinin bitiminden SONRA olmalıdır.</p>
+
+            <h2 style="margin-top: 4rem;">Bölüm 2: Manipülasyonu Kanıtlamak - SMT Divergence</h2>
+            <p>Bir tepe kırıldığında bunun gerçek bir trend değişimi mi (Breakout) yoksa az önce bahsettiğimiz sahte bir Judas Swing (Stop Hunt) mi olduğunu nasıl anlarız? Bize <strong>"SMT Divergence" (Uyumsuzluk)</strong> lazımdır.</p>
+
             <img src="assets/smt-chart.png" alt="SMT Uyumsuzluk Grafiği" class="course-image">
 
-            <p>SMT, yüksek korelasyonlu iki varlığı karşılaştırma sanatıdır. Örneğin; EUR/USD ve GBP/USD, veya NQ (Nasdaq) ve ES (S&P 500) birlikte hareket etmelidir.</p>
-            <ul>
-                <li>Eğer EUR/USD yeni bir tepe yapıp eski tepeyi kırıyorsa (BSL alıyorsa), GBP/USD'nin de yeni bir tepe yapması gerekir.</li>
-                <li><strong>Düşüş (Bearish) SMT:</strong> Eğer EUR/USD yeni bir yüksek tepe (Higher High) yaparken, GBP/USD eski tepesini kıramayıp "Daha düşük tepe" (Lower High) yapıyorsa burada UYUMSUZLUK vardır. Bu bize EUR/USD'nin yaptığı yeni tepenin bir "Sahte Kırılım (Judas Swing)" olduğunu ve kurumsalların el altından satışa geçtiğini bağırarak söyler.</li>
-                <li>Bu SMT onayını gördüğümüz anda, o tepe kırılımından <strong>asla alım yapılmaz</strong>, Aksine satış (Short) fırsatı aranır!</li>
-            </ul>
+            <h3>2.1 - Korelasyon ve Çatlaklar</h3>
+            <p>Dünya piyasalarında her şey birbirine bağlıdır. EUR/USD ile GBP/USD genellikle aynı yöne gider. Nasdaq (NQ), S&P 500 (ES) ve Dow Jones (YM) birlikte hareket eder. Birbirlerini taklit etmelidirler.</p>
+            <p>SMT, bu taklidin BOZULDUĞU andır. Kurumsal algoritmalar yorulduğunda her pariteyi aynı anda manipüle edemezler. Çatlaklar oluşur.</p>
 
-            <h2>3. Keskin Nişancı Girişi: Rejection Block (Ret Bloğu)</h2>
-            <p>MSNR ile yönü bulduk. SMT ile sahte hareketi (Stop Hunt) teyit ettik. Peki işleme tam olarak nereden gireceğiz? Cevap: <strong>Rejection Block</strong>.</p>
-            
+            <h3>2.2 - Bearish (Düşüş) SMT Tespiti</h3>
+            <p>Varsayalım ki piyasa yükseliyor. EUR/USD az önce eski tepesini kırarak "Daha Yüksek Bir Tepe (Higher High)" yaptı. Normal şartlarda GBP/USD'nin de kendi eski tepesini kırması gerekir.</p>
+            <p>Eğer GBP/USD eski tepesine kadar gelip orayı <strong>KIRAMIYORSA</strong> ve "Daha Düşük Bir Tepe (Lower High)" yapıyorsa... İşte bu Bearish SMT'dir! Bu durum bize EUR/USD'nin yaptığı o harika kırılımın tamamen "SAHTE" olduğunu, bir likidite avı (Stop Hunt) olduğunu bas bas bağırır. Oradan alım yapmak intihardır. Aksine, oradan mükemmel bir short (satış) kurulumu aranır.</p>
+
+            <h2 style="margin-top: 4rem;">Bölüm 3: Rejection Block (Ret Bloğu) ve İşleme Giriş</h2>
+            <p>Yönümüzü belirledik. SMT ile sahte kırılımı yakaladık. Peki tetiği nerede çekeceğiz? Karşınızda en düşük riskli giriş metodu: <strong>Rejection Block</strong>.</p>
+
             <img src="assets/rejection-chart.png" alt="ICT Rejection Block Grafiği" class="course-image">
 
-            <p>Rejection Block, likiditenin alındığı o sahte hareketin ardında bıraktığı <strong>çok uzun bir fitildir (Wick)</strong>. ICT konseptlerinde asıl hacim ve kurumsal ayak izi gövdelerde değil, o uzun fitillerin içindedir.</p>
-            
-            <h3>Nasıl Kullanılır?</h3>
+            <h3>3.1 - Fitillerin (Wicks) Sırrı</h3>
+            <p>Piyasada "Order Block" (Emir Bloğu) arayan herkes mumların gövdelerine odaklanır. Ancak gerçek ICT konseptinde asıl pazar manipülasyonu <strong>uzun fitillerin</strong> içinde gerçekleşir.</p>
+            <p>Rejection Block, likidite havuzunu süpüren (eski bir tepeyi delen) ve kapanışını eski tepenin ALTINDA yapan o devasa uzun fitilli mumdur. O fitil, akıllı paranın piyasayı yukarı itip aniden mal boşalttığı (dağıtım/distribution) yerdir.</p>
+
+            <h3>3.2 - Keskin Nişancı Girişi Nasıl Yapılır?</h3>
             <ol style="padding-left: 1.5rem; color: #d4d4d8; margin-bottom: 2rem;">
-                <li style="margin-bottom: 0.5rem;">Fiyat eski bir tepeyi delip SMT oluşturduğunda, o mumun kapanışını bekleyin.</li>
-                <li style="margin-bottom: 0.5rem;">Eğer mum, deldiği o tepenin altında kapanırsa, geriye çok uzun bir fitil bırakmış olacaktır.</li>
-                <li style="margin-bottom: 0.5rem;">Bu uzun fitilin tepe noktasından (High) mumun gövdesine kadar olan alanı bir kutu içine alın. Bu sizin "Rejection Block" alanınızdır.</li>
-                <li style="margin-bottom: 0.5rem;">Fiyat o fitilin yarısına (Fair Value / %50 seviyesi) geri döndüğünde, bu en düşük riskli ve en yüksek potansiyelli işlem girişidir.</li>
+                <li style="margin-bottom: 0.5rem;">Süpürmeyi (Sweep) yapan mum kapanana kadar BA-KI-YOR-SU-NUZ. Asla mum kapanmadan işleme girilmez.</li>
+                <li style="margin-bottom: 0.5rem;">Mum kapandıktan sonra tepede uzun bir fitil oluştuğundan emin olun. O fitilin en uç noktası ile gövdesinin başladığı yer arasını yatay bir kutu (Box) ile çizin. Burası sizin "Rejection Block" alanınızdır.</li>
+                <li style="margin-bottom: 0.5rem;">Fiyat genellikle bu fitilin tam yarısına (%50 seviyesi, "Consequent Encroachment" denir) bir kez daha dokunmak için geri döner.</li>
+                <li style="margin-bottom: 0.5rem;">Fiyat bu fitilin %50'sine dokunduğu anda piyasa emriyle işleme girin (Limit order da koyabilirsiniz). Stop-Loss, o fitilin ucunun 1-2 pip dışıdır. Bu size devasa bir Risk/Ödül (R/R) oranı sağlar.</li>
             </ol>
 
             <div class="pro-tip">
-                <strong>💡 Kombinasyon Formülü (The Originals Setup)</strong><br>
-                Zaman: New York Açılışı (Killzone)<br>
-                1. Fiyat MSNR Taze (Fresh) A Bölgesine gelir.<br>
-                2. Fiyat önceki günün tepesini hızlıca kırar (Judas Swing/BSL alınır).<br>
-                3. Korele pariteye (Örn: NQ vs ES) bakılır, diğeri tepeyi kıramamıştır (SMT Divergence).<br>
-                4. Kırılım yapan mum aşağıda kapanıp devasa bir fitil (Rejection Block) bırakır.<br>
-                5. Fiyat tekrar o fitilin içine yükseldiğinde SHORT (Satış) işlemine girilir. Stop loss fitilin hemen üstüdür.
+                <strong>💡 The Originals Ultimate Setup (Nihai Kurulum)</strong><br>
+                1. <strong>Zaman:</strong> New York Session Killzone (TSİ 15:30 - 18:00 arası).<br>
+                2. <strong>Hikaye:</strong> Fiyat HTF (Yüksek zaman dilimi) MSNR taze (fresh) bölgesine ulaşmıştır.<br>
+                3. <strong>Manipülasyon:</strong> Fiyat bir önceki günün veya Asya seansının tepesini aniden süpürür (Judas Swing).<br>
+                4. <strong>Kanıt:</strong> Korele varlığa (örn. DXY veya başka endeks) bakılır, SMT Uyumsuzluğu görülür.<br>
+                5. <strong>Tetik:</strong> Mum kapanır, devasa bir fitil bırakır. Fitilin yarısına Limit Emri (Sell Limit) atılır.<br>
+                6. <strong>Sonuç:</strong> Algoritma işlemi alır ve hızla karşı tarafın likiditesine çökmek için düşmeye başlar.
             </div>
 
-            <div style="text-align: center; margin-top: 4rem;">
-                <p style="margin-bottom: 2rem; color: var(--text-muted);">Sistemi kurduk. Peki ya psikolojimiz? Kaybettiğimizde veya fırsat kaçtığında ne yapacağız?</p>
-                <a href="psychology.html" class="btn btn-outline" style="padding: 1rem 3rem;">Modül 3: Psikoloji & Risk'e Geç</a>
+            <div style="text-align: center; margin-top: 5rem;">
+                <p style="margin-bottom: 2rem; color: var(--text-muted); font-size: 1.1rem;">Sistemin matematiğini çözdünüz. Ancak bu sistemi uygulayacak "çelik gibi" bir zihne ihtiyacınız var. Psilokoloji eğitimi olmadan strateji bir hiçtir.</p>
+                <a href="psychology.html" class="btn btn-primary" style="padding: 1.2rem 4rem; font-size: 1.1rem;">MODÜL 3: Psikoloji & Risk'e Geç</a>
             </div>
 
         </article>
