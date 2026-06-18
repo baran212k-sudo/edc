@@ -95,25 +95,36 @@
         <p>&copy; 2026 The Originals. Tüm hakları saklıdır. Sadece eğitim amaçlıdır.</p>
     </footer>
 
-    <!-- Login Modal (Same as index) -->
+    
+    <!-- Login/Register Modal -->
     <div id="login-modal">
         <div class="login-box">
-            <h2>ÜYE GİRİŞİ</h2>
-            <div class="error-msg" id="login-error">Geçersiz bilgiler. Lütfen tekrar deneyin.</div>
+            <div id="auth-tabs" style="display: flex; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <button id="tab-login" class="tab-btn active" style="flex:1; background:none; border:none; color:white; padding:1rem; cursor:pointer; font-weight:600; border-bottom: 2px solid white; transition: all 0.3s;">Giriş Yap</button>
+                <button id="tab-register" class="tab-btn" style="flex:1; background:none; border:none; color:var(--text-muted); padding:1rem; cursor:pointer; font-weight:600; border-bottom: 2px solid transparent; transition: all 0.3s;">Kayıt Ol</button>
+            </div>
+            
+            <h2 id="modal-title" style="margin-bottom: 1.5rem; font-weight: 300; letter-spacing: 2px;">ÜYE GİRİŞİ</h2>
+            <div class="error-msg" id="login-error"></div>
+            <div class="success-msg" id="login-success" style="color: #10b981; font-size: 0.85rem; margin-bottom: 1rem; display: none;">Kayıt başarılı! Yönlendiriliyorsunuz...</div>
+            
             <div class="input-group">
                 <label>E-posta Adresi</label>
                 <input type="email" id="email-input" placeholder="trader@theoriginals.com">
             </div>
             <div class="input-group">
-                <label>Şifre</label>
+                <label>Şifre (En az 6 Karakter)</label>
                 <input type="password" id="password-input" placeholder="••••••••">
             </div>
-            <button class="btn btn-primary" id="submit-login" style="width: 100%; margin-top: 1rem;">Giriş Yap</button>
-            <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.8rem;">Hesabınız yok mu? <br>Erişim sağlamak için Telegram grubuna katılın.</p>
+            
+            <button class="btn btn-primary" id="submit-auth" style="width: 100%; margin-top: 1rem;">Giriş Yap</button>
             <button id="close-modal" style="background: none; border: none; color: white; margin-top: 1.5rem; cursor: pointer; text-decoration: underline;">Kapat</button>
         </div>
     </div>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
     <script src="auth.js"></script>
 </body>
 </html>
