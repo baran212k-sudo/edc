@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setLoggedInState() {
         if (navLoginBtn) {
-            navLoginBtn.textContent = 'Log Out';
+            navLoginBtn.textContent = 'Çıkış Yap';
         }
         document.body.classList.add('unlocked');
         document.body.classList.remove('locked');
